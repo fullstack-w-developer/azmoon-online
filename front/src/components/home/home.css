@@ -1,0 +1,13 @@
+.ParticipatingTest{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    grid-gap: 1.5rem;
+
+}
+
+@media all and (max-width:960px) {
+    .ParticipatingTest{
+        grid-template-columns: 90%;
+    }
+}

@@ -1,0 +1,14 @@
+.container_tests {
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  place-items: center;
+}
+
+@media all and (max-width: 960px) {
+  .container_tests {
+    grid-template-columns: 90%;
+  }
+}

@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "yekanbold";
+  src: url("./assets/fonts/IRANYekanBold.ttf");
+}
+@font-face {
+  font-family: "yekanRegular";
+  src: url("./assets/fonts/IRANYekanRegular.ttf");
+}
+@font-face {
+  font-family: "ExtraYekanBold";
+  src: url("./assets/fonts/IRANYekanExtraBold.ttf");
+}
+@font-face {
+  font-family: "badKhat";
+  src: url("./assets/fonts/persian-badkh@t2.ttf");
+}
+
+body {
+  overflow: hidden;
+}
+.bold {
+  font-family: yekanbold !important ;
+}
+.Extrabold {
+  font-family: ExtraYekanBold !important ;
+}
+
+.regular {
+  font-family: yekanRegular !important;
+}
+.badKhat {
+  font-family: badKhat !important;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 10px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn-disabled {
+  margin: 10px;
+  padding: 10px 45px;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  border-radius: 30px;
+  display: block;
+  cursor: not-allowed !important;
+}
+
+.container__screen {
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: center;
+  height: 100%;
+}
+.container__screen > div {
+  height: 97vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container__screen > div::-webkit-scrollbar-thumb {
+  width: 2px;
+  background: #9faeaf;
+}
+.container__screen > div::-webkit-scrollbar {
+  width: 4px;
+  background: #f6f6f6;
+}
+
+@media all and (max-width: 960px) {
+  .container__screen {
+    grid-template-columns: 100%;
+  }
+}
+
+.rtl {
+  direction: rtl !important;
+}
+.ltr {
+  direction: ltr !important;
+}
+
+.screen_style_menu_route {
+  background-image: url("./assets/image/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+textarea {
+  border: 1px solid #ced6e0;
+  font-family: yekanRegular !important;
+  color: #576574 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+input::placeholder {
+  font-size: 0.8rem !important;
+  color: #c4ccd6 !important;
+}
+
+.items_two {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  grid-gap: 1rem;
+}
+
+@media all and (max-width: 960px) {
+  .items_two {
+    grid-template-columns: 90%;
+  }
+}
+
+.loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+}
+
+.loading > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation-left-right {
+  animation:run 2s infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(10px);
+  }
+ 
+  100% {
+    transform: translateX(25px);
+  }
+}

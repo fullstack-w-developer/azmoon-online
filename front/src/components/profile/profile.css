@@ -1,0 +1,65 @@
+.select_edit_profile > div {
+  border: 1px solid #ced6e0 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.1em 0 !important;
+}
+.select_edit_profile .css-14el2xx-placeholder {
+  font-family: yekanRegular !important;
+  font-size: 0.8rem !important;
+  color: #c4ccd6 !important;
+}
+
+.select_edit_profile .css-2613qy-menu {
+  font-family: yekanRegular !important;
+}
+
+.select_edit_profile .css-1pahdxg-control {
+  border: 1px solid #ced6e0 !important;
+  box-shadow: none !important;
+}
+
+.select_edit_profile .css-qc6sy-singleValue {
+  font-family: yekanRegular !important;
+  color: #576574 !important;
+}
+
+#react-select-3-input{
+  width: 6rem !important;
+}
+
+.modal-response {
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 40%;
+  background-color: #ffffff;
+  outline: none;
+  border-radius: 0.35rem;
+  width: 40%;
+}
+
+@media all and (max-width:768px) {
+  .modal-response{
+    width:90%;
+    height: 80%;
+  }
+}
+
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000045;
+  }
+
+  .modal-response > div{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+  }

@@ -1,0 +1,13 @@
+.container_save_answer{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    grid-gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+@media all and (max-width:960px) {
+    .container_save_answer{
+        grid-template-columns: 90%;
+    }
+}
