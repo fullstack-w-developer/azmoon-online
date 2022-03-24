@@ -11,7 +11,7 @@ const MyTestComponent = () => {
   const [start, setStart] = useState(false);
   const [level, setLevel] = useState("");
   const getMytest = useQuery(["mytest"], () => getMytestApi(), {
-    enabled: useLocation().pathname === "/azmoon/tests",
+    enabled: useLocation().pathname === "/azmoon-online/tests",
     refetchOnMount: false,
     refetchOnWindowFocus: false,
     retry: 2,
