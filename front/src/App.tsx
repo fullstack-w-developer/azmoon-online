@@ -29,16 +29,16 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
-          <Route path="/azmoon" element={loginInfo.token  && loginInfo.idSignup ? <Navigate to="/azmoon/home"/> :<Login/>} />
-          <Route path="/azmoon/verify" element={<Verify />} />
-          <Route path="/azmoon/home" element={<Home />} />
-          <Route path="/azmoon/create-question" element={<CreateQuestion />} />
-          <Route path="/azmoon/profile" element={<Profile />} />
-          <Route path="/azmoon/tests" element={<MyTest />} />
-          <Route path="/azmoon/about" element={<About />} />
+          <Route path="/azmoon-online" element={loginInfo.token  && loginInfo.idSignup ? <Navigate to="/azmoon-online/home"/> :<Login/>} />
+          <Route path="/azmoon-online/verify" element={<Verify />} />
+          <Route path="/azmoon-online/home" element={<Home />} />
+          <Route path="/azmoon-online/create-question" element={<CreateQuestion />} />
+          <Route path="/azmoon-online/profile" element={<Profile />} />
+          <Route path="/azmoon-online/tests" element={<MyTest />} />
+          <Route path="/azmoon-online/about" element={<About />} />
           <Route
         path="*"
-        element={<Navigate to="/azmoon" replace />}
+        element={<Navigate to="/azmoon-online" replace />}
     />
         </Routes>
       </Router>

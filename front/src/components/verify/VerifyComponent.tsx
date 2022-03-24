@@ -44,7 +44,7 @@ const VerifyComponent = ({ getcode }: props) => {
           token: data.data.data.token,
         });
 
-        navigate("/azmoon/home");
+        navigate("/azmoon-online/home");
       },
       onError: () => {
         setTimeout(() => {
