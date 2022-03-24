@@ -36,7 +36,6 @@ const Login = () => {
       }, 9000);
     },
     onSuccess: (data) => {
-      console.log(data);
       setLoginInfo({
         ...loginInfo,
         phonenumber: data.data.data.phonenumber,

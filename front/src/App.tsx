@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import Login from "./pages/login/Login";
 import Verify from "./pages/verify/Verify";
@@ -24,22 +24,32 @@ function App() {
   axios.defaults.headers.common["x-access-token"] =
     loginInfo.token && loginInfo.token;
 
+  axios.defaults.headers.common["Content-Type"] = "application/json";
 
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
-          <Route path="/azmoon-online" element={loginInfo.token  && loginInfo.idSignup ? <Navigate to="/azmoon-online/home"/> :<Login/>} />
+          <Route
+            path="/azmoon-online"
+            element={
+              loginInfo.token && loginInfo.idSignup ? (
+                <Navigate to="/azmoon-online/home" />
+              ) : (
+                <Login />
+              )
+            }
+          />
           <Route path="/azmoon-online/verify" element={<Verify />} />
           <Route path="/azmoon-online/home" element={<Home />} />
-          <Route path="/azmoon-online/create-question" element={<CreateQuestion />} />
+          <Route
+            path="/azmoon-online/create-question"
+            element={<CreateQuestion />}
+          />
           <Route path="/azmoon-online/profile" element={<Profile />} />
           <Route path="/azmoon-online/tests" element={<MyTest />} />
           <Route path="/azmoon-online/about" element={<About />} />
-          <Route
-        path="*"
-        element={<Navigate to="/azmoon-online" replace />}
-    />
+          <Route path="*" element={<Navigate to="/azmoon-online" replace />} />
         </Routes>
       </Router>
     </QueryClientProvider>
