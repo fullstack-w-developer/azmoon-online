@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 toast.configure();
 const App = React.lazy(() => import("./App"));
 
-axios.defaults.baseURL = "https://azmoononlinenodejs.ftp.evennode.com//api";
+axios.defaults.baseURL = "https://azmoononlinenodejs.eu-4.evennode.com//api";
 
 ReactDOM.render(
   <React.StrictMode>
