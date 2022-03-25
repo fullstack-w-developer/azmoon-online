@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 toast.configure();
 const App = React.lazy(() => import("./App"));
 
-axios.defaults.baseURL = "https://azmoononlinenodejs.ap-1.evennode.com/api";
+axios.defaults.baseURL = "http://azmoononlinenodejs.eu-4.evennode.com/api";
 axios.defaults.headers.common["Content-Type"] = "application/json";
 
 ReactDOM.render(
