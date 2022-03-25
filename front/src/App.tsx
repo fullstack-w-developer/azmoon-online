@@ -21,8 +21,8 @@ const queryClient = new QueryClient();
 
 function App() {
   const { loginInfo } = useContext(loginInfoContext);
-  // axios.defaults.headers.common["x-access-token"] =
-  //   loginInfo.token && loginInfo.token;
+  axios.defaults.headers.common["x-access-token"] =
+    loginInfo.token && loginInfo.token;
 
   axios.defaults.headers.common["Content-Type"] = "application/json";
 
