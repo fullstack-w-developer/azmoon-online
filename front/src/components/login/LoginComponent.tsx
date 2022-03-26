@@ -42,7 +42,7 @@ const LoginComponent = ({
             required
           />
         </div>
-        <p className="bold text-gray-800">لطفا از روشن بودن فیلتر شکن خود اطمینان حاصل نمایید</p>
+        <p className="bold text-gray-800 px-4">لطفا از روشن بودن فیلتر شکن خود اطمینان حاصل نمایید</p>
         <button
           type="submit"
           disabled={disabled ? true : false}
