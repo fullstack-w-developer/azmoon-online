@@ -1,8 +1,8 @@
 import {NavLink} from "react-router-dom"
 export const Title = () => {
   return (
-    <h1 className="badKhat text-gray-800 text-center text-5xl w-full">
-      آزمون انلاین
+    <h1 className="Extrabold text-gray-800 text-center text-3xl w-full">
+      آزمون آنلاین
     </h1>
   );
 };

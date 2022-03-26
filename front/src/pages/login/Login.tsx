@@ -65,20 +65,23 @@ const Login = () => {
   });
 
   return (
-    <div className="login">
-      <div>
-        <div className="hidden lg:block">
-          <img src={Learn} alt="learn" />
+    <>
+     
+      <div className="login">
+        <div>
+          <div className="hidden lg:block">
+            <img src={Learn} alt="learn" />
+          </div>
+          <LoginComponent
+            error={errors as errorType}
+            register={register}
+            onsubmit={handleSubmit(onSubmit)}
+            apiError={checkphone.isError}
+            disabled={checkphone.isLoading || checkphone.isSuccess}
+          />
         </div>
-        <LoginComponent
-          error={errors as errorType}
-          register={register}
-          onsubmit={handleSubmit(onSubmit)}
-          apiError={checkphone.isError}
-          disabled={checkphone.isLoading || checkphone.isSuccess}
-        />
       </div>
-    </div>
+    </>
   );
 };
 
