@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/azmoon-online/static/css/main.e26fc0e0.css",
-    "main.js": "/azmoon-online/static/js/main.8ed35d5e.js",
+    "main.css": "/azmoon-online/static/css/main.8ce9f42b.css",
+    "main.js": "/azmoon-online/static/js/main.40e0ef83.js",
     "static/css/639.a8546c8c.chunk.css": "/azmoon-online/static/css/639.a8546c8c.chunk.css",
-    "static/js/639.c7a32857.chunk.js": "/azmoon-online/static/js/639.c7a32857.chunk.js",
+    "static/js/639.3d12e20e.chunk.js": "/azmoon-online/static/js/639.3d12e20e.chunk.js",
     "static/js/787.a4b24711.chunk.js": "/azmoon-online/static/js/787.a4b24711.chunk.js",
     "static/js/615.ddaa449a.chunk.js": "/azmoon-online/static/js/615.ddaa449a.chunk.js",
     "static/media/bg.jpg": "/azmoon-online/static/media/bg.af415ab19705b3ede7d5.jpg",
@@ -14,15 +14,15 @@
     "static/media/persian-badkh@t2.ttf": "/azmoon-online/static/media/persian-badkh@t2.497fca95fb1d032627d6.ttf",
     "static/media/test.svg": "/azmoon-online/static/media/test.7e6e6ef66bf6aac5f69d156a2b64eefc.svg",
     "index.html": "/azmoon-online/index.html",
-    "main.e26fc0e0.css.map": "/azmoon-online/static/css/main.e26fc0e0.css.map",
-    "main.8ed35d5e.js.map": "/azmoon-online/static/js/main.8ed35d5e.js.map",
+    "main.8ce9f42b.css.map": "/azmoon-online/static/css/main.8ce9f42b.css.map",
+    "main.40e0ef83.js.map": "/azmoon-online/static/js/main.40e0ef83.js.map",
     "639.a8546c8c.chunk.css.map": "/azmoon-online/static/css/639.a8546c8c.chunk.css.map",
-    "639.c7a32857.chunk.js.map": "/azmoon-online/static/js/639.c7a32857.chunk.js.map",
+    "639.3d12e20e.chunk.js.map": "/azmoon-online/static/js/639.3d12e20e.chunk.js.map",
     "787.a4b24711.chunk.js.map": "/azmoon-online/static/js/787.a4b24711.chunk.js.map",
     "615.ddaa449a.chunk.js.map": "/azmoon-online/static/js/615.ddaa449a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e26fc0e0.css",
-    "static/js/main.8ed35d5e.js"
+    "static/css/main.8ce9f42b.css",
+    "static/js/main.40e0ef83.js"
   ]
 }
